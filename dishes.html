@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="Logo" width="100px">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+                
+                <div class="d-flex gap-2" role="search">
+                    <button class="btn btn-outline-primary" type="submit" id="Logout_btn">Logout</button>
+                </div>
+                    
+                   
+            </div>
+        </div>
+    </nav>
+
+    <div class="p-5 text-center" id="page-spinner">
+        <div class="spinner-border" role="status" style="width: 200px; height: 200px;">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+
+    <div id="main-content" style="display: none;">
+        <div class="row px-2 py-4">
+            <div class="col">
+                <div class="card w-100">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <img src="aiwi.jpg" alt="Restaurant" width="100" id="res-image">
+                                <h5 class="card-title" id="res-name"></h5>
+                                <p class="card-text" id="res-address">With supporting text below as a natural lead-in to additional content.</p>
+                                <span class="badge bg-primary">Zinger Burger</span>
+                                <span class="badge bg-primary">Zinger Burger</span>
+                                <span class="badge bg-primary">Zinger Burger</span>
+                                <span class="badge bg-primary">Zinger Burger</span>
+                                <span class="badge bg-primary">Zinger Burger</span>
+                                <span class="badge bg-primary">Zinger Burger</span>
+                            </div>
+                            <div class="social-icons d-flex gap-4">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-youtube"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row px-2 py-4">
+            <div class="col-8" id="all-dishes">
+                <!-- Dishes content here -->
+            </div>
+            <div class="col-4">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <b>Cart</b>
+                    </div>
+                    <div class="card-body" id="cart">
+                        <!-- Cart content here -->
+                       
+                    </div>
+                    
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Checkout
+                      </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-start">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Name</label>
+                <input type="text" class="form-control" id="Name" aria-describedby="emailHelp">
+                
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Number</label>
+                <input type="number" class="form-control" id="Contact" aria-describedby="emailHelp" placeholder="Enter Contact Number">
+
+               
+              </div>
+              <div class="mb-3 " >
+                <
+                <label for="exampleInputEmail1" class="form-label">Address</label>
+              <textarea name=""  rows="3" class="form-control" id="Address"></textarea>
+</div>
+<div class="d-flex justify-content-between gap-4">
+    <span>Delivery Charges:</span>
+    <span class="fw-bold" id="delivery_charges">Rs 100/-</span>
+</div>
+<div class="d-flex justify-content-between">
+    <span>Total Amount:</span>
+    <span class="fw-bold" id="total_amount"></span>
+</div>
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="close_btn">Close</button>
+          <button type="button" class="btn btn-primary" id="placeorder">Place Order</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="./js/dishes.js" type="module"></script><script src="./js/order.js" type="module"></script>
+</body>
+</html>

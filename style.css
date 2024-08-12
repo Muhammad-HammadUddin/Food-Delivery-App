@@ -1,0 +1,96 @@
+.navbar{
+    background-color: white;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,.12), inset 0 -1px 0 0 #dadce0;
+}
+.btn-primary{
+    background-color: #339900;
+    border-color: #339900;
+}
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+    background-color: #339900;
+    border-color: #339900;
+    opacity: 0.4;
+}
+
+.btn-outline {
+    background-color: #FF8500;
+    border-color: #FF8500;
+    color: white;
+}
+.btn-outline:hover,
+.btn-outline:active,
+.btn-outline:focus {
+    background-color: #FF8500;
+    border-color: #FF8500;
+    opacity: 0.6;
+}
+
+.btn-outline-success {
+    background-color: white;
+    border-color: #28a745;
+    color: #28a745;
+}
+.btn-outline-success:hover,
+.btn-outline-success:active,
+.btn-outline-success:focus {
+    background-color: #28a745;
+    border-color: #28a745;
+    color: white;
+}
+/* .badge{
+    background-color: #F72007;
+    color: black;
+} */
+.dish-img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.add-to-cart{
+    height: fit-content;
+}
+.social-icons{
+    font-size: 32px;
+    color:green;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color:rgb(85, 84, 84) !important;
+    
+}
+.slected_logo{
+    display: none;
+}
+.spinner-border{
+    width: 20px;
+    height: 20px;
+    
+}
+#restaurant-spinner,#dish-spinner{
+    display: none;
+}
+
+
+.res-logo-image{
+    width: 30px;
+    height: 50px;
+    border-radius: 15px;
+
+}
+.card-img-top{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+
+}
+.dish-image{
+    width: 100px;
+    height: 100px;
+}
+.page-spinner{
+    width:200px;
+    height: 200px;
+}
