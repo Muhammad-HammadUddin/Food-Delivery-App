@@ -78,7 +78,7 @@ onAuthStateChanged(auth,(user)=>{
   }
   else{
     
-    console.log("No user");
+    window.location.href="login.html"
   }
 })
 
